@@ -1,3 +1,9 @@
 # ディレクトリは`git add -f`で個別に追加する。
-#/*/
-#!/audio/
+/*/
+!/audio/
+!/css/
+!/img/
+!/js/
+!/model/
+!/shader/
+!/video/
