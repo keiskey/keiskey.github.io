@@ -1,0 +1,8 @@
+{
+  "name": "index",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jade": "jade jade/*.jade -O jade/config.json -o . -wP"
+  }
+}
