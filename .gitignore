@@ -1,4 +1,5 @@
-node_modules
+components/
+node_modules/
 
 # 共通ディレクトリ設定
 # 各プロジェクトはそれぞれのリポジトリで管理する。
