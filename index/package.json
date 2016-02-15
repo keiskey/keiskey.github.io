@@ -7,7 +7,16 @@
   "scripts": {
     "echo": "echo $npm_package_config_key, $npm_package_name",
     "jade": "jade -wPO jade/config.json -o . jade/*.jade",
+    "stylus": "stylus -w -u nib -o css/ stylus/",
     "coffee": "coffee -wo js/ coffee/",
-    "build": "npm run jade & npm run coffee"
+    "build": "npm run jade & npm run stylus & npm run coffee",
+    "postinstall": "npm link coffee-script jade markdown stylus"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "jade": "^1.11.0",
+    "markdown": "^0.5.0",
+    "nib": "^1.1.0",
+    "stylus": "^0.53.0"
   }
 }
