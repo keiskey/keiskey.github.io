@@ -1,8 +1,13 @@
 {
   "name": "index",
   "version": "1.0.0",
+  "config": {
+    "key": "value"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "jade": "jade jade/*.jade -O jade/config.json -o . -wP"
+    "echo": "echo $npm_package_config_key, $npm_package_name",
+    "jade": "jade -wPO jade/config.json -o . jade/*.jade",
+    "coffee": "coffee -wo js/ coffee/",
+    "build": "npm run jade & npm run coffee"
   }
 }
