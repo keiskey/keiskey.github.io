@@ -8,3 +8,6 @@
 !/model/
 !/shader/
 !/video/
+
+# root index
+!/index/
