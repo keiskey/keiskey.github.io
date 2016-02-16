@@ -9,12 +9,14 @@
     "jade": "jade -wPO jade/config.json -o . jade/*.jade",
     "stylus": "stylus -w -u nib -o css/ stylus/",
     "coffee": "coffee -wo js/ coffee/",
-    "build": "npm run jade & npm run stylus & npm run coffee",
-    "postinstall": "npm link coffee-script jade markdown stylus"
+    "watch": "livereloadx .",
+    "build": "npm run jade & npm run stylus & npm run coffee & npm run watch",
+    "postinstall": "npm link coffee-script jade markdown stylus livereloadx"
   },
   "devDependencies": {
     "coffee-script": "^1.10.0",
     "jade": "^1.11.0",
+    "livereloadx": "^0.3.9",
     "markdown": "^0.5.0",
     "nib": "^1.1.0",
     "stylus": "^0.53.0"
