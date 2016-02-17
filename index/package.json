@@ -1,6 +1,5 @@
 {
   "name": "index",
-  "version": "1.0.0",
   "config": {
     "key": "value"
   },
@@ -9,9 +8,10 @@
     "jade": "jade -wPO jade/config.json -o . jade/*.jade",
     "stylus": "stylus -w -u nib -o css/ stylus/",
     "coffee": "coffee -wo js/ coffee/",
-    "watch": "livereloadx .",
     "build": "npm run jade & npm run stylus & npm run coffee & npm run watch",
-    "postinstall": "npm link coffee-script jade markdown stylus livereloadx"
+    "watch": "livereloadx > /dev/null",
+    "start": "livereloadx -s",
+    "install": "npm link coffee-script jade markdown stylus livereloadx"
   },
   "devDependencies": {
     "coffee-script": "^1.10.0",

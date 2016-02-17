@@ -34,7 +34,8 @@ linkコマンドを使うと、ローカルインストールしたモジュー�
 scripts:
   "postinstall": "npm link coffee-script jade markdown stylus"
 ```
-postinstallで、インストール後に自動実行する。
+postinstallで、インストール後に自動実行する。  
+`install`もpackageのインストール後に実行されるので、実質同等。
 
 # jade
 http://jade-lang.com/command-line/  
@@ -58,3 +59,12 @@ coffee --watch(w) --output(o) __output-dir__ --compile(c) __input-dir__
 coffee -wo js/ coffee/
 ```
 cオプションの記述は省略可能。
+
+# livereload
+livereloadxパッケージを利用。  
+http://tech.nitoyon.com/ja/blog/2013/02/27/livereloadx/  
+livereloadxコマンドで引数に監視したいディレクトリを渡す。  
+`livereloadx [path/to/dir]`（パス省略時はカレントディレクトリ）  
+--static(s)オプションで静的サーバーとしても利用可能。  
+`livereloadx -s [-p 35729] [path/to/dir]`  
+http://localhost:35729/ >> path/to/dir/index.html  
