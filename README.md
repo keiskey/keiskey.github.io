@@ -68,3 +68,16 @@ livereloadxコマンドで引数に監視したいディレクトリを渡す。
 --static(s)オプションで静的サーバーとしても利用可能。  
 `livereloadx -s [-p 35729] [path/to/dir]`  
 http://localhost:35729/ >> path/to/dir/index.html  
+
+# webpack
+http://webpack.github.io/docs/
+webpack --watch(w) --config __config-file__
+```
+scripts:
+  "webpack": "webpack -w"
+```
+設定ファイルをwebpack.config.jsまたはwebpack.config.coffee以外の名前にする場合は、--configオプションでの指定が必要。
+`webpack --config webpack.coffee`
+
+js以外のファイルをrequireする場合は、loaderが必要。
+`npm install coffee-loader`

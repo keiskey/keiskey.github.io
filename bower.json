@@ -1,0 +1,7 @@
+{
+  "name": "various",
+  "dependencies": {
+    "dat-gui": "^0.5.1",
+    "three.js": "threejs#*"
+  }
+}
