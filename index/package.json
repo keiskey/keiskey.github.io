@@ -8,9 +8,10 @@
     "jade": "jade -wPO jade/config.json -o . jade/*.jade",
     "stylus": "stylus -w -u nib -o css/ stylus/",
     "coffee": "coffee -wo js/ coffee/",
-    "build": "npm run jade & npm run stylus & npm run coffee & npm run watch",
+    "build": "npm run jade & npm run stylus & npm run coffee",
     "watch": "livereloadx > /dev/null",
-    "start": "livereloadx -s",
+    "server": "livereloadx -s",
+    "start": "npm run build & npm run watch",
     "install": "npm link coffee-script jade markdown stylus livereloadx"
   },
   "devDependencies": {
