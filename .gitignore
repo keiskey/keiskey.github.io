@@ -1,16 +1,17 @@
 components/
 node_modules/
+_*/
 
-# 共通ディレクトリ設定
-# 各プロジェクトはそれぞれのリポジトリで管理する。
-/*/
-!/audio/
-!/css/
-!/img/
-!/js/
-!/model/
-!/shader/
-!/video/
-
-# root index
-!/index/
+# # 共通ディレクトリ設定
+# # 各プロジェクトはそれぞれのリポジトリで管理する。
+# /*/
+# !/audio/
+# !/css/
+# !/img/
+# !/js/
+# !/model/
+# !/shader/
+# !/video/
+#
+# # root index
+# !/index/
