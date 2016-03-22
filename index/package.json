@@ -10,7 +10,7 @@
     "stylus": "if [ ! -d stylus ]; then exit; fi; stylus -w -u nib -o css/ stylus/",
     "coffee": "coffee -wo js/ coffee/",
     "webpack": "webpack -w",
-    "build": "npm run jade & npm run stylus & npm run webpack",
+    "build": "npm run jade & npm run stylus & npm run coffee # or npm run webpack (*need for config)",
     "watch": "livereloadx > /dev/null",
     "server": "livereloadx -s",
     "start": "npm run build & npm run watch",
