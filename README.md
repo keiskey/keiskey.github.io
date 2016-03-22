@@ -3,6 +3,12 @@ root index.
 index.html link to index project.  
 `/index.html` >> `/index/index.html`
 
+# git submodule
+子プロジェクトはsubmoduleとして登録する。
+```
+  $ git submodule add <repository> <directory>
+```
+
 # npm
 `$npm_package_`にキー名をつなげることで値を参照できる。
 ```
