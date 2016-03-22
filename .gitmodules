@@ -1,3 +1,6 @@
 [submodule "particle"]
 	path = particle
 	url = https://github.com/keiskey/particle.git
+[submodule "instancing"]
+	path = instancing
+	url = https://github.com/keiskey/instancing.git
