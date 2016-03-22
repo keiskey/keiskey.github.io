@@ -3,6 +3,12 @@ root index.
 index.html link to index project.  
 `/index.html` >> `/index/index.html`
 
+# project
+- githubにrepository作成。
+- submoduleとして初期化。`project$ git submodule init`
+- submoduleとしてルートに追加。`various$ git submodule add <repository> <directory>`
+- node_modulesの追加。`npm install`
+
 # git submodule
 子プロジェクトはsubmoduleとして登録する。
 ```
