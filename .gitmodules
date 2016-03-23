@@ -4,3 +4,6 @@
 [submodule "instancing"]
 	path = instancing
 	url = https://github.com/keiskey/instancing.git
+[submodule "geometry"]
+	path = geometry
+	url = https://github.com/keiskey/geometry.git
