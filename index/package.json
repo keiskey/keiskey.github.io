@@ -14,6 +14,7 @@
     "watch": "livereloadx > /dev/null",
     "server": "livereloadx -s",
     "start": "npm run build & npm run watch",
+    "preinstall": "mkdir -p coffee jade",
     "install": "npm link coffee-script jade markdown stylus livereloadx webpack coffee-loader nib  # need to install globally"
   },
   "devDependencies": {
