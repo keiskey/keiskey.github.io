@@ -1,0 +1,24 @@
+{
+  "name": "project",
+  "config": {
+    "key": "value",
+    "jade": "jade/config.json"
+  },
+  "scripts": {
+    "hint": "echo $npm_package_config_key, $npm_package_name  # comment -- -<arg>",
+    "jade": "jade -wPO $npm_package_config_jade -o . jade/*.jade  # need for config",
+    "jade:config": "if [ ! -f $npm_package_config_jade ]; then echo {} > $npm_package_config_jade; fi",
+    "stylus": "if [ -d stylus ]; then (stylus -w -u nib -o css/ stylus/); fi",
+    "coffee": "coffee -wo js/ coffee/  # no use require",
+    "webpack": "webpack -w  # need for config",
+    "build": "npm run jade & npm run stylus & npm run coffee",
+    "watch": "livereloadx > /dev/null",
+    "server": "livereloadx -s",
+    "start": "npm run build & npm run watch",
+    "preinstall": "mkdir -p coffee jade; npm run jade:config",
+    "install": "npm link coffee-script jade markdown stylus livereloadx webpack coffee-loader nib  # need to install globally"
+  },
+  "devDependencies": {
+
+  }
+}
