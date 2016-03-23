@@ -5,7 +5,7 @@ index.html link to index project.
 
 # project
 - githubにrepository作成。
-- submoduleとしてルートに追加。`various$ git submodule add <repository> <directory>`  # directoryを省略するとconfigには追加されない。
+- submoduleとしてルートに追加。`various$ git submodule add <repository> <directory>` _（directoryを省略するとconfigには追加されない）_
 - package.jsonをコピー。
 - node_modulesの追加。`npm install`
 
