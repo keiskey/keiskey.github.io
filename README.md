@@ -6,7 +6,7 @@ index.html link to index project.
 # project
 - githubにrepository作成。
 - submoduleとしてルートに追加。`various$ git submodule add <repository> <directory>` _（directoryを省略するとconfigには追加されない）_
-- package.jsonをコピー。
+- indexのpackage.orig.jsonをpackage.jsonとしてハードリンクを張る。（ハードリンクは元ファイルが消えてもアクセス可能。
 - node_modulesの追加。`npm install`
 
 # git submodule
