@@ -4,6 +4,7 @@ index.html link to index project.
 `/index.html` >> `/index/index.html`
 
 # project
+- プロジェクトディレクトリ作成。
 - githubにrepository作成。
 - submoduleとしてルートに追加。`various$ git submodule add <repository> <directory>` _（directoryを省略するとconfigには追加されない）_
 - indexのpackage.orig.jsonをpackage.jsonとしてハードリンクを張る。（ハードリンクは元ファイルが消えてもアクセス可能。
