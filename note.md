@@ -1,3 +1,12 @@
+# THREE.Shape
+パスから点を使う場合は、実際の点と等間隔に抽出した点の二つを利用できる。
+```
+points = shape.createPointsGeometry()  # vertices from real points
+spacedPoints = shape.createSpacedPointsGeometry(50)  # equidistance sampled points
+```
+実点を使うとカーブがきれいに出るので線を扱う時に向いている。
+等距離点を使うと点描画がきれいにみえる。
+
 # MouseEventのカスタムイベント
 ```
   event = new MouseEvent "mousewheel"
