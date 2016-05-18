@@ -19,6 +19,12 @@ index.html link to index project.
   git fetch  # ローカルリポジトリの更新
   git branch -r  # リモートブランチの確認
 
+  # masterに最初のコミット
+  touch README.md
+  git add README.md
+  git commit -m 'initial'
+  git push
+
   # ブランチを作成（いずれか
   git branch <new-branch>  # リモートブランチと同名でローカルブランチを作成
   git branch <new-branch> <remote-branch>  # 別名でローカルブランチを作成
