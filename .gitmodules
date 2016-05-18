@@ -7,3 +7,6 @@
 [submodule "geometry"]
 	path = geometry
 	url = https://github.com/keiskey/geometry.git
+[submodule "network"]
+	path = network
+	url = https://github.com/keiskey/network.git
