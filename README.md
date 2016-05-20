@@ -9,6 +9,7 @@ index.html link to index project.
 - submoduleとしてルートに追加。`various$ git submodule add <repository> <directory>` _（directoryを省略するとconfigには追加されない）_
 - indexのpackage.orig.jsonをpackage.jsonとしてハードリンクを張る。（ハードリンクはiノードを参照するので、元ファイルが消えてもアクセス可能。
 - node_modulesの追加。`npm install`
+## 新規作成
 ```
   # ディレクトリ作成と移動
   mkdir <project> && cd $_
@@ -16,23 +17,29 @@ index.html link to index project.
   # リポジトリを登録
   git init  # ローカルリポジトリの生成
   git remote add origin <repository>  # リモートリポジトリの登録
-  git fetch  # ローカルリポジトリの更新
-  git branch -r  # リモートブランチの確認
 
-  # masterに最初のコミット
+  # masterに最初のコミットをする
   touch README.md
   git add README.md
   git commit -m 'initial'
-  git push
+  git push  # git push -u origin master
+
+  # branchが反映されるので確認。
+  git branch -r  # リモートブランチの確認
 
   # ブランチを作成（いずれか
-  git branch <new-branch>  # リモートブランチと同名でローカルブランチを作成
-  git branch <new-branch> <remote-branch>  # 別名でローカルブランチを作成
-  git checkout -b <new-branch>  # ブランチを作成してチェックアウトする
+  # git branch <new-branch>  # リモートブランチと同名でローカルブランチを作成
+  # git branch <new-branch> <remote-branch>  # 別名でローカルブランチを作成
+  # git checkout -b <new-branch>  # ブランチを作成してチェックアウトする
 
   # データを取得
-  git checkout <new-branch>  # チェックアウト
-  git pull
+  # git checkout <new-branch>  # チェックアウト
+  # git pull
+
+  # gh-pagesブランチを作成してチェックアウトする
+  git checkout -b gh-pages
+  git push
+  # githubのSettingsでDefault brancheを更新しておく。
 
   # submoduleとして登録
   cd ../  # variousに移動
