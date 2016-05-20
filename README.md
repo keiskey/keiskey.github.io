@@ -9,6 +9,7 @@ index.html link to index project.
 - submoduleとしてルートに追加。`various$ git submodule add <repository> <directory>` _（directoryを省略するとconfigには追加されない）_
 - indexのpackage.orig.jsonをpackage.jsonとしてハードリンクを張る。（ハードリンクはiノードを参照するので、元ファイルが消えてもアクセス可能。
 - node_modulesの追加。`npm install`
+
 ## 新規作成
 ```
   # ディレクトリ作成と移動
