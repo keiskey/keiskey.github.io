@@ -1,3 +1,7 @@
+//-
+//- TODO: 自動構築化
+//-
+
 doctype
 html(lang="ja")
   head
@@ -13,7 +17,42 @@ html(lang="ja")
       window.addEventListener "load", (event) -> console.log event
     script(src="./js/main.js")
   body
-    #wrapper= greeting
-    h1 Various Projects
-    input(type="date")
-    input(type="month")
+    #wrapper
+      h1 Various Projects
+      section
+        h2 geometry
+        ul
+          li: a(href="geometry/arrow.html") geometry/arrow
+          li: a(href="geometry/arrow2.html") geometry/arrow2
+          li: a(href="geometry/arrow3.html") geometry/arrow3
+          li: a(href="geometry/arrow4.html") geometry/arrow4
+          li: a(href="geometry/box-morph.html") geometry/box-morph
+          li: a(href="geometry/box.html") geometry/box
+          li: a(href="geometry/edit.html") geometry/edit
+          li: a(href="geometry/gradation.html") geometry/gradation
+          li: a(href="geometry/merge.html") geometry/merge
+          li: a(href="geometry/path.html") geometry/path
+      section
+        h2 instancing
+        ul
+          //- li: a(href="instancing/") instancing
+          li: a(href="instancing/example-1.html") instancing/example-1
+          li: a(href="instancing/example-2.html") instancing/example-2
+          //- li: a(href="instancing/example-3.html") instancing/example-3
+      section
+        h2 Particle
+        ul
+          //- li: a(href="particle/") particle
+          li: a(href="particle/box.html") particle/box
+          li: a(href="particle/line.html") particle/line
+          li: a(href="particle/points.html") particle/points
+          //- li: a(href="particle/sphere.html") particle/sphere
+      section
+        h2 network
+        ul
+          li: a(href="network/receive.html") network/receive
+          li: a(href="network/send.html") network/send
+    //- p= greeting
+    //- input(type="date")
+    //- input(type="month")
+    
