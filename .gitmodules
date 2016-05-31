@@ -13,3 +13,6 @@
 [submodule "glsl"]
 	path = glsl
 	url = https://github.com/keiskey/glsl.git
+[submodule "light"]
+	path = light
+	url = https://github.com/keiskey/light.git
