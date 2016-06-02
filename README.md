@@ -22,8 +22,9 @@ index.html link to index project.
   # masterに最初のコミットをする
   touch README.md
   git add README.md
-  git commit -m 'initial'
+  git commit -m 'initial'  # 一度コミットすると、git branchにmasterが表示されるようになる。
   git push  # git push -u origin master
+  # 一度プッシュすると、`git branch -r`でorigin/masterが表示されるようになる。
 
   # branchが反映されるので確認。
   git branch -r  # リモートブランチの確認
@@ -42,7 +43,7 @@ index.html link to index project.
   git push
   # githubのSettingsでDefault brancheを更新しておく。
 
-  # submoduleとして登録
+  # submoduleとして登録する
   cd ../  # variousに移動
   git submodule add <repository> <project>
 
