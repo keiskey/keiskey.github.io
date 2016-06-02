@@ -16,3 +16,6 @@
 [submodule "light"]
 	path = light
 	url = https://github.com/keiskey/light.git
+[submodule "panorama"]
+	path = panorama
+	url = https://github.com/keiskey/panorama.git
