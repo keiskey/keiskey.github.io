@@ -19,3 +19,6 @@
 [submodule "panorama"]
 	path = panorama
 	url = https://github.com/keiskey/panorama.git
+[submodule "loader"]
+	path = loader
+	url = https://github.com/keiskey/loader.git
