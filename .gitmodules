@@ -22,3 +22,6 @@
 [submodule "loader"]
 	path = loader
 	url = https://github.com/keiskey/loader.git
+[submodule "maya"]
+	path = maya
+	url = https://github.com/keiskey/maya.git
