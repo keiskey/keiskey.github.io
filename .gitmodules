@@ -25,3 +25,6 @@
 [submodule "maya"]
 	path = maya
 	url = https://github.com/keiskey/maya.git
+[submodule "chart"]
+	path = chart
+	url = https://github.com/keiskey/chart.git
