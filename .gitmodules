@@ -28,3 +28,6 @@
 [submodule "chart"]
 	path = chart
 	url = https://github.com/keiskey/chart.git
+[submodule "multiview"]
+	path = multiview
+	url = https://github.com/keiskey/multiview.git
