@@ -1,5 +1,6 @@
 {
   "name": "project.orig",
+  "hint": "this package.json is link file. if you customize it, copy one.",
   "config": {
     "key": "value",
     "jade": "jade/config.json"

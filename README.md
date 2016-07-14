@@ -90,8 +90,9 @@ linkコマンドを使うと、ローカルインストールしたモジュー�
 scripts:
   "postinstall": "npm link coffee-script jade markdown stylus"
 ```
-postinstallで、インストール後に自動実行する。  
-`install`もpackageのインストール後に実行されるので、実質同等。
+`install`がpackageのインストール後に実行され、`postinstall`がその後に実行される。
+
+name値は空白不可。
 
 # jade
 http://jade-lang.com/command-line/  
