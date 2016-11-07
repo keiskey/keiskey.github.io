@@ -34,3 +34,6 @@
 [submodule "homography"]
 	path = homography
 	url = https://github.com/keiskey/homography.git
+[submodule "opencv"]
+	path = opencv
+	url = https://github.com/keiskey/opencv.git
