@@ -40,3 +40,6 @@
 [submodule "vimeo"]
 	path = vimeo
 	url = https://github.com/keiskey/vimeo.git
+[submodule "pool"]
+	path = pool
+	url = https://github.com/keiskey/pool.git
