@@ -37,3 +37,6 @@
 [submodule "opencv"]
 	path = opencv
 	url = https://github.com/keiskey/opencv.git
+[submodule "vimeo"]
+	path = vimeo
+	url = https://github.com/keiskey/vimeo.git
