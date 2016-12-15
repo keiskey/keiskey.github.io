@@ -1,0 +1,25 @@
+{
+  "name": "project.v2",
+  "hint": "no coffee",
+  "config": {
+    "key": "value",
+    "jade": "jade/config.json"
+  },
+  "scripts": {
+    "hint": "echo $npm_package_config_key, $npm_package_name  # comment -- -<arg>",
+    "jade": "jade -wPO $npm_package_config_jade -o . jade/*.jade  # need for config",
+    "jade:config": "if [ ! -f $npm_package_config_jade ]; then echo {} > $npm_package_config_jade; fi",
+    "stylus": "if [ -d stylus ]; then (stylus -w -u nib -o css/ stylus/); fi",
+    "webpack": "webpack -w  # need for config",
+    "build": "npm run jade & npm run stylus",
+    "watch": "livereloadx > /dev/null",
+    "server": "livereloadx -s",
+    "start": "npm run build & npm run watch",
+    "preinstall": "mkdir -p jade js; npm run jade:config",
+    "install": "npm link jade markdown stylus livereloadx webpack nib  # need to install globally"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "vimeo": "^1.2.0"
+  }
+}
