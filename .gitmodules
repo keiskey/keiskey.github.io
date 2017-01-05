@@ -43,3 +43,9 @@
 [submodule "pool"]
 	path = pool
 	url = https://github.com/keiskey/pool.git
+[submodule "capture"]
+	path = capture
+	url = https://github.com/keiskey/capture.git
+[submodule "storage"]
+	path = storage
+	url = https://github.com/keiskey/storage.git

@@ -17,7 +17,7 @@ index.html link to index project.
 
   # リポジトリを登録
   git init  # ローカルリポジトリの生成
-  git remote add origin <repository>  # リモートリポジトリの登録
+  git remote add origin <repository>  # リモートリポジトリの登録（https://github.om/keiskey/<project>.git
 
   # masterに最初のコミットをする
   touch README.md
