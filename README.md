@@ -38,10 +38,13 @@ index.html link to index project.
   # git checkout <new-branch>  # チェックアウト
   # git pull
 
+  # ページの公開方法 その1 gh-pagesブランチを作成する
   # gh-pagesブランチを作成してチェックアウトする
   git checkout -b gh-pages
   git push
   # githubのSettingsでDefault brancheを更新しておく。
+  # --
+  # ページの公開方法 その2 docsディレクトリを作成する（masterブランチ）
 
   # submoduleとして登録する
   cd ../  # variousに移動

@@ -49,3 +49,6 @@
 [submodule "storage"]
 	path = storage
 	url = https://github.com/keiskey/storage.git
+[submodule "bookmarklet"]
+	path = bookmarklet
+	url = https://github.com/keiskey/bookmarklet.git
