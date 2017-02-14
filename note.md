@@ -52,3 +52,11 @@ documentからは、contentWindowで指定できる。
   // documentからcontentWindow経由で参照
   document.getElementById("main").contentWindow.log("def");  // def
 ```
+
+# Bash
+変更の確認
+```
+$ cd various/
+$ for n in `ls`; do ( if [ -d $n ]; then { cd $n; pwd; git status; } fi; ) done
+```
+cdコマンドのため、サブシェル()で展開。
