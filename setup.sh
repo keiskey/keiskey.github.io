@@ -7,7 +7,7 @@
 project=${1:?'no project name'}
 repository="https://github.com/keiskey/$project.git"
 
-cd $HOME/Sites/various
+cd /projects
 
 # ディレクトリ作成と移動
 mkdir $project && cd $_
