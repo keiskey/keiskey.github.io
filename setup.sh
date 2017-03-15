@@ -28,7 +28,7 @@ git push
 # XXX: githubのSettingsでDefault brancheを更新しておく。
 
 # submoduleとして登録する
-cd ../  # variousに移動
+cd ../  # ルートディレクトリに移動
 git submodule add $repository $project
 
 # package.jsonをリンクしてインストール

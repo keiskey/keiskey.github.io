@@ -56,7 +56,7 @@ documentからは、contentWindowで指定できる。
 # Bash
 変更の確認
 ```
-$ cd various/
+$ cd projects
 $ for n in `ls`; do ( if [ -d $n ]; then { cd $n; pwd; git status; } fi; ) done
 ```
 cdコマンドのため、サブシェル()で展開。

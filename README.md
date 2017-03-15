@@ -6,7 +6,7 @@ index.html link to index project.
 # project
 - プロジェクトディレクトリ作成。
 - githubにrepository作成。
-- submoduleとしてルートに追加。`various$ git submodule add <repository> <directory>` _（directoryを省略するとconfigには追加されない）_
+- submoduleとしてルートに追加。`projects$ git submodule add <repository> <directory>` _（directoryを省略するとconfigには追加されない）_
 - indexのpackage.orig.jsonをpackage.jsonとしてハードリンクを張る。（ハードリンクはiノードを参照するので、元ファイルが消えてもアクセス可能。
 - node_modulesの追加。`npm install`
 
@@ -47,7 +47,7 @@ index.html link to index project.
   # ページの公開方法 その2 docsディレクトリを作成する（masterブランチ）
 
   # submoduleとして登録する
-  cd ../  # variousに移動
+  cd ../  # ルートディレクトリに移動
   git submodule add <repository> <project>
 
   # package.jsonをリンクしてインストール
