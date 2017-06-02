@@ -141,3 +141,21 @@ scripts:
 
 js以外のファイルをrequireする場合は、loaderが必要。
 `npm install coffee-loader`
+
+# babel
+本体パッケージをインストール
+```
+npm install babel-cli
+```
+実行
+```
+babel 入力元 -d 出力先  // -wオプション：監視
+```
+ES2015にトランスパイルするには、プリセット用の別途パッケージと、.babelrcファイルが必要。
+```
+npm install babel-preset-es2015
+```
+```
+cat > .babelrc
+{ "preset" ["es2015"] }
+```
