@@ -159,3 +159,8 @@ npm install babel-preset-es2015
 cat > .babelrc
 { "preset" ["es2015"] }
 ```
+## webpackで利用する場合
+loaderのインストール
+```
+npm install babel-loader
+```
