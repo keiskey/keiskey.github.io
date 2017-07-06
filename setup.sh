@@ -31,7 +31,7 @@ git push
 cd ../  # ルートディレクトリに移動
 git submodule add $repository $project
 
-# package.jsonをコピーしてセットアップ
-cp index/package.json $project/package.json
+# package.jsonとgulpfileをコピーしてセットアップ
+cp index/{package.json,gulpfile.babel.js} $project/
 cd $project
 npm run setup
