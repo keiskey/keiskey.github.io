@@ -17,6 +17,7 @@
     "server_livereloadx": "livereloadx -s  # -p 35729",
     "server_browser-sync": "browser-sync start --server --files '*.html, *.css, *.js'  # --port 3000",
     "server_php": "php -S localhost:5000",
+    "config:jade": "if [ ! -f $npm_package_config_jade ]; then echo {} > $npm_package_config_jade; fi",
     "setup": "npm link browser-sync gulp gulp-babel gulp-jade gulp-plumber gulp-stylus nib stylus  # babelはローカルに置かないと動作しない",
     "postsetup": "npm install",
     "preinstall": "mkdir -p jade stylus css es js",
