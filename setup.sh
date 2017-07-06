@@ -31,7 +31,7 @@ git push
 cd ../  # ルートディレクトリに移動
 git submodule add $repository $project
 
-# package.jsonをリンクしてインストール
-ln index/package.orig.json $project/package.json  # ハードリンク
+# package.jsonをコピーしてセットアップ
+cp index/package.json $project/package.json
 cd $project
-npm install
+npm run setup
