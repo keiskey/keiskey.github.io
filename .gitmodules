@@ -58,3 +58,6 @@
 [submodule "portfolio"]
 	path = portfolio
 	url = https://github.com/keiskey/portfolio.git
+[submodule "motion"]
+	path = motion
+	url = https://github.com/keiskey/motion.git
