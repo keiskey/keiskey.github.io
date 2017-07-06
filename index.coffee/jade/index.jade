@@ -10,6 +10,11 @@ html(lang="ja")
     title= title
     link(rel="stylesheet", href="css/reset.css")
     link(rel="stylesheet", href="css/main.css")
+    script(src="//code.jquery.com/jquery-2.2.0.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.min.js")
+    script(src="//coffeescript.org/extras/coffee-script.js")
+    script(type="text/coffeescript").
+      window.addEventListener "load", (event) -> console.log event
     script(src="./js/main.js")
   body
     #wrapper

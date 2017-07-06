@@ -44,16 +44,16 @@ index.html link to index project.
   git push
   # githubのSettingsでDefault brancheを更新しておく。
   # --
-  # ページの公開方法 その2 docsディレクトリを作成する（masterブランチ）
+  # docsディレクトリを作成する（masterブランチ）ことでページ公開も可能だが、その場合はローカル環境で参照している階層が異なる。
 
   # submoduleとして登録する
   cd ../  # ルートディレクトリに移動
   git submodule add <repository> <project>
 
-  # package.jsonをリンクしてインストール
-  ln index/package.orig.json <project>/package.json  # ハードリンク
+  # package.jsonをコピーしてセットアップ
+  cp index/package.json <project>/package.json
   cd <project>
-  npm install
+  npm run setup
 ```
 
 # git submodule

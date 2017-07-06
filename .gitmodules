@@ -55,3 +55,6 @@
 [submodule "chrome"]
 	path = chrome
 	url = https://github.com/keiskey/chrome.git
+[submodule "portfolio"]
+	path = portfolio
+	url = https://github.com/keiskey/portfolio.git

@@ -1,7 +1,5 @@
-"use strict";
-
 console.debug(performance.now());
 
-window.addEventListener("DOMContentLoaded", function (event) {
+window.addEventListener("DOMContentLoaded", event => {
   console.log(event.type, performance.now());
 });
