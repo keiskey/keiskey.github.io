@@ -58,3 +58,6 @@
 [submodule "motion"]
 	path = motion
 	url = https://github.com/keiskey/motion.git
+[submodule "controller"]
+	path = controller
+	url = https://github.com/keiskey/controller.git
