@@ -67,3 +67,6 @@
 [submodule "timeline"]
 	path = timeline
 	url = https://github.com/keiskey/timeline.git
+[submodule "dmx"]
+	path = dmx
+	url = https://github.com/keiskey/dmx.git
