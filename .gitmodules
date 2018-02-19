@@ -70,6 +70,9 @@
 [submodule "dmx"]
 	path = dmx
 	url = https://github.com/keiskey/dmx.git
-[submodule "game"]
-	path = game
-	url = https://github.com/keiskey/game.git
+[submodule "scorer"]
+	path = scorer
+	url = https://github.com/keiskey/scorer.git
+[submodule "scorer-v1"]
+	path = scorer-v1
+	url = https://github.com/keiskey/scorer-v1.git
