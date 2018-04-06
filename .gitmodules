@@ -64,9 +64,6 @@
 [submodule "color"]
 	path = color
 	url = https://github.com/keiskey/color.git
-[submodule "timeline"]
-	path = timeline
-	url = https://github.com/keiskey/timeline.git
 [submodule "dmx"]
 	path = dmx
 	url = https://github.com/keiskey/dmx.git
@@ -76,3 +73,9 @@
 [submodule "scorer-v1"]
 	path = scorer-v1
 	url = https://github.com/keiskey/scorer-v1.git
+[submodule "calendar"]
+	path = calendar
+	url = https://github.com/keiskey/calendar.git
+[submodule "streaming"]
+	path = streaming
+	url = https://github.com/keiskey/streaming.git
