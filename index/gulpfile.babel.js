@@ -1,29 +1,29 @@
 import gulp from "gulp";
 import plumber from "gulp-plumber";
 import browser from "browser-sync"
-// import configJSON from "./src/es/config.dev"
+// import configJSON from "./es/config.dev"
 
 const config = {
   jade: {
-    src: "./src/jade/*.jade",
-    dest: "./docs",
-    watch: "./src/jade/**/*.jade",
+    src: "./jade/*.jade",
+    dest: ".",
+    watch: "./jade/**/*.jade",
   },
   stylus: {
-    src: "./src/stylus/!(_)*.styl",
-    dest: "./docs/css",
-    watch: "./src/stylus/**/*.styl",
+    src: "./stylus/!(_)*.styl",
+    dest: "./css",
+    watch: "./stylus/**/*.styl",
   },
   es: {
-    src: ["./src/es/**/*.js", "./src/es/**/*.js"],
-    dest: "./docs/js",
+    src: ["./es/**/*.js", "./es/**/*.js"],
+    dest: "./js",
     // watchはwebpackの機能を使う。
   },
 };
 
 // ----
 import jade from "gulp-jade"
-import locals from "./src/jade/config.json"
+import locals from "./jade/config.json"
 gulp.task("jade", () => {
   const {src, dest} = config.jade;
   gulp.src(src)
@@ -66,7 +66,7 @@ gulp.task("es", () => {
 // ----
 gulp.task("server", () => {
   browser({
-    server: __dirname + "/docs",
+    server: __dirname,
     port: 8000,
     open: false,
     notify: false,

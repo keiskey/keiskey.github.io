@@ -4,10 +4,10 @@ export default {
   mode: "development",
   watch: true,
   entry: {
-    main: "./src/es/main.js",
+    main: "./es/main.js",
   },
   output: {
-    path: __dirname + "/docs/js",
+    path: __dirname + "/js",
     filename: "[name].js"
   },
   module: {
