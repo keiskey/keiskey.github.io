@@ -1,2 +1,0 @@
-- npm ver.5 対応
-- Babel 対応
