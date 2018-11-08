@@ -16,9 +16,9 @@
     "server_php": "php -S localhost:5000",
     "server_python": "python -m http.server",
     "config:jade": "if [ ! -f $npm_package_config_jade ]; then echo {} > $npm_package_config_jade; fi",
-    "_presetup": "mkdir -p src; cd $_; mkdir -p jade stylus css es js; npm run config:jade",
+    "presetup": "mkdir -p jade stylus css es js; npm run config:jade",
     "setup": "npm link @babel/core @babel/register @babel/preset-env babel-loader browser-sync gulp gulp-babel gulp-jade gulp-plumber gulp-stylus nib stylus webpack webpack-stream",
-    "_postsetup": "npm install",
+    "postsetup": "npm install",
     "start": "gulp"
   },
   "devDependencies": {
