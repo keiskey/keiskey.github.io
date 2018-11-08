@@ -1,5 +1,5 @@
 {
-  "name": "bookmarklet",
+  "name": "index",
   "config": {
     "key": "value",
     "jade": "jade/config.json"
