@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="320" height="180"
+     viewBox="0 0 100 100">
+  <title>Title</title>
+  <style>
+    svg {
+      background: #ffe;
+      font-size: 32px;
+      font-weight: bold;
+      text-anchor: middle;
+      dominant-baseline: central;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+    }
+    circle {
+      fill: orange;
+      stroke: #c306;
+      stroke-width: 4px;
+    }
+    text {
+      cursor: default;
+    }
+  </style>
+  <g>
+    <circle cx="50" cy="50" r="20" />
+    <text x="50" y="50" fill="#fff">1</text>
+  </g>
+
+  <script>
+    document.querySelector("text").onclick = function() {
+      this.textContent = ++this.textContent;
+      // this.style.fill = `hsl(${Math.random() * 360}, 100%, 30%)`;
+    };
+    document.addEventListener("keydown", (event) => {
+      switch (event.code) {
+        case "Space":
+          document.querySelector("text").onclick();
+      }
+    })
+
+    // 参考
+    // 一発芸！SVGでHTMLを画像化する - Qiita
+    // https://qiita.com/haribote/items/b17d46b9679ce2fb2712
+    // JavaScriptでファイルダウンロード処理を実現する - Qiita
+    // https://qiita.com/wadahiro/items/eb50ac6bbe2e18cf8813
+    // 【D3.js】チャートをSVGやPNGでダウンロードできるようにするまでの長い道のり – GUNMA GIS GEEK
+    // https://shimz.me/blog/d3v4/5126
+    // XMLSerializer.serializeToString() - Web APIs | MDN
+    // https://developer.mozilla.org/en-US/docs/Web/API/XMLSerializer/serializeToString
+  </script>
+
+</svg>

@@ -79,3 +79,6 @@
 [submodule "streaming"]
 	path = streaming
 	url = https://github.com/keiskey/streaming.git
+[submodule "webar"]
+	path = webar
+	url = https://github.com/keiskey/webar.git
